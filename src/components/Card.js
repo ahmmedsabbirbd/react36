@@ -1,12 +1,14 @@
 import React from 'react';  
 
-const cardText = 'Card One';
-const cardDescription = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptas commodi ea quas soluta eos fugit quis eligendi delectus culpa!';
+const DcardText = 'Default card';
+const DcardDescription = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptas commodi ea quas soluta eos fugit quis eligendi delectus culpa!';
 
-function Card(){
+function Card(props){
+    const {cardText, cardDescription} = props;
+    
     return  <div className="card"> 
-                <h2>{cardText}</h2>
-                <p>{cardDescription}</p>
+                <h2>{cardText ? cardText : DcardText}</h2>
+                <p>{cardDescription ? cardDescription : DcardDescription}</p>
             </div>
 }
 
