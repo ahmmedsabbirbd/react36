@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Card from './components/Card';
 import CardData from './CardData.json';
+import { v4 as uuidv4 } from 'uuid';
 
 // let Cards = [];
 // for(let i = 0; i < CardData.length; i++) { 
@@ -12,7 +13,7 @@ function App(){
             <div className="card__wraper">
                 {/* {Cards}  step-2 */}
  
-                {CardData.map((item, index) => <Card cardText={item.cardText} key={index} cardDescription={item.cardDescription} />)}
+                {CardData.map((item, index) => <Card cardText={item.cardText} key={uuidv4()} cardDescription={item.cardDescription} />)}
             </div>
         </div>
 }
