@@ -1,19 +1,22 @@
-import React from 'react'; 
-import Card from './components/Card';
-import CardData from './CardData.json';
-import { v4 as uuidv4 } from 'uuid';
-
-// let Cards = [];
-// for(let i = 0; i < CardData.length; i++) { 
-//     Cards.push(<Card cardText={CardData[i].cardText} key={i} cardDescription={CardData[i].cardDescription} />);
-// } //Json data show step-1
+import React from 'react';  
+import users from './users';
 
 function App(){
     return <div className="container">
-            <div className="card__wraper">
-                {/* {Cards}  step-2 */}
- 
-                {CardData.map((item, index) => <Card cardText={item.cardText} key={uuidv4()} cardDescription={item.cardDescription} />)}
+            <div className="card__wraper">  
+                {
+                    users.map((user, index) =>  <article key={index} >
+                            <h1>Name : {user.name}</h1>
+                            <h2>Age : {user.age}</h2>
+                            <p>{user.bio}</p> 
+                            {
+                                user.phones.map((phone, index) => <div>
+                                    <p>{phone.home}</p><p>{phone.office}</p>
+                                    </div>
+                                )
+                            } 
+                        </article>)
+                } 
             </div>
         </div>
 }
