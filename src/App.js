@@ -1,10 +1,10 @@
-import React from 'react';    
-import State from './component/State';  
+import React from 'react';        
+import Conditional_Rendering from './Conditional_Rendering';     
 
 function App(){
     return <div className="container">
-            <div className="card__wraper"> 
-                <State />
+            <div className="card__wraper">  
+                <Conditional_Rendering /> 
             </div>
         </div>
 }
