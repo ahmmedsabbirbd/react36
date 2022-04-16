@@ -1,15 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom/client"; 
 import App from './App';
 
-const tutorial = 9;
- 
-ReactDOM.render(
+const tutorial = 10;
+
+ReactDOM.createRoot(document.getElementById("root")).render(
     <div>
         <h1 className='title'>Start React {tutorial}</h1> 
-        <p>Conditional Rendering - ternary, short circuit</p> 
+        <p>Event Handler - onChange - onClick & Binding </p>
+        <p>React Hooks - useState</p> 
+        <p>Form - controlled component</p>
         
         <App />   
-    </div>,
-    document.getElementById('root')
-);
+    </div>
+); 
+
