@@ -1,18 +1,10 @@
-import React from 'react';        
-import Event_Handler_Class from './Event_Handler_Class';     
-import Event_Handler_Binding from './Event_Handler_Binding';     
-import Class from './Hooks_UseState/Class';     
-import Hooks_UseState from './Hooks_UseState';     
-import Form from './Form_Controlled_Component/Form';     
+import React from 'react';
+import FAQS from './FAQS'; 
 
 function App(){
     return <div className="container">
-            <div className="card__wraper">  
-                <Event_Handler_Class />
-                <Event_Handler_Binding />
-                <Class />
-                <Hooks_UseState />
-                <Form />
+            <div className="card__wraper">
+                <FAQS />
             </div>
         </div>
 }
