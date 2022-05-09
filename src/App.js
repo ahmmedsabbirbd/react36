@@ -1,14 +1,12 @@
 import React from 'react'; 
-import DataFetch from './DataFetch/DataFetch';
-import CustomHook from './CustomHook/DetaFetch';
-import UseEffectExample from './useEffect/UseEffectExample';
+import Component1 from './PropDrilling/Component1'; 
+import UserContext from './UserContext/Component1'; 
 
 function App(){
     return <div className="container">
-            <div className="card__wraper">
-                <UseEffectExample />
-                <DataFetch />
-                <CustomHook />
+            <div className="card__wraper"> 
+                <Component1 />
+                <UserContext />
             </div>
         </div>
 }
