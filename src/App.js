@@ -1,10 +1,14 @@
-import React from 'react';
-import FAQS from './FAQS'; 
+import React from 'react'; 
+import DataFetch from './DataFetch/DataFetch';
+import CustomHook from './CustomHook/DetaFetch';
+import UseEffectExample from './useEffect/UseEffectExample';
 
 function App(){
     return <div className="container">
             <div className="card__wraper">
-                <FAQS />
+                <UseEffectExample />
+                <DataFetch />
+                <CustomHook />
             </div>
         </div>
 }
