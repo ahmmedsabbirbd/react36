@@ -1,12 +1,12 @@
-import React from 'react'; 
-import Component1 from './PropDrilling/Component1'; 
-import UserContext from './UserContext/Component1'; 
+import React from 'react';  
+import Users from './PropTypes/Users';
+import UserReducer from './UseReducer/Users';
 
 function App(){
     return <div className="container">
             <div className="card__wraper"> 
-                <Component1 />
-                <UserContext />
+                <Users />
+                <UserReducer />
             </div>
         </div>
 }
