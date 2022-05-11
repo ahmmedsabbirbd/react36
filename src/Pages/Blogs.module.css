@@ -1,0 +1,39 @@
+.article__wraper {
+    gap: 15px;
+    margin: -15px; 
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f1f1f1;
+}
+
+article span {
+    display: block;
+}
+
+article img {
+    max-width: 100%;
+}
+
+article p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px)  {
+
+    .article__wraper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 575px)  {
+
+    .article__wraper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
